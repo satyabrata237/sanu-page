@@ -5,7 +5,7 @@
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
       </head>
-      <body class="container-fluid bg-secondary">
+      <body class="container-fluid bg-success">
             <div class="btn-toolbar bg-dark justify-content-between position-sticky top-0">
                   <div class="btn-group">
                         <button class="btn btn-dark"><span class="bi bi-house-fill"></span> home</button>
@@ -20,14 +20,22 @@
             </div>
             <div class="carousel slide carousel-dark"  id="Banner" data-bs-ride="carousel">
                   <div class="carousel-inner">
-                        <div class="carousel-item active">
-                              <img src="./images/sale.PNG" width="100%" alt="">
+                        <div class="carousel-item active" data-bs-interval="2000">
+                              <img src="./images/sale.PNG" class="d-block w-100" style="height: 280px;" alt="">
                         </div>
-                        <div class="carousel-item">
-                              <img src="./images/sita-ram.PNG" width="100%" alt="">
+                        <div class="carousel-item" data-bs-interval="2000">
+                              <img src="./images/sita-ram.PNG" class="d-block w-100" style="height: 280px;" alt="">
                         </div>
-                        <div class="carousel-item">
-                              <img src="./images/Capture-flight.PNG" width="100%" alt="">
+                        <div class="carousel-item" data-bs-interval="2000">
+                              <img src="./images/Capture-flight.PNG" class="d-block w-100" style="height: 280px;" alt="">
+                        </div>
+                        <div class="carousel-item" data-interval="2000">
+                              <div class="d-flex justify-content-center align-content-center" style="height: 280px; background-color: yellow;">
+                                    <div>
+                                          <h1>Click Button and visit offer's</h1>
+                                          <button class="btn btn-primary w-100 mt-4">Visit Offers ></button>
+                                    </div>
+                              </div>
                         </div>
                         <button class="carousel-control-prev" data-bs-target="#Banner" data-bs-slide="prev">
                               <span class="carousel-control-prev-icon"></span>
@@ -39,17 +47,17 @@
                               <button data-bs-target="#Banner" data-bs-slide-to="0" class="active"></button>
                               <button data-bs-target="#Banner" data-bs-slide-to="1"></button>
                               <button data-bs-target="#Banner" data-bs-slide-to="2"></button>
+                              <button data-bs-target="#Banner" data-bs-slide-to="3"></button>
                         </div>
                   </div>
             </div>
             <br>
-            <div class="alert alert-danger alert-dismissble show fade justify-content-between" id="delete">
-                  <button class="btn-close" data-bs-dismiss="alert"></button>
-                  <h2>Delete Record</h2>
-                  <p>Record Will be Deleted Permanently</p>
-                  <a href="#" class="alert-link">Help?</a>
-            </div>
-            <h2>Products</h2>
+            <div class="alert alert-success alert-dismissible">
+                  <h1 class="alert-title">You click the Crussimble</h1>
+                  <button data-bs-dismiss="alert" class="btn-close"></button>
+                  <p class="alert-text">Record will be deleted pormanetly</p>
+                  <button data-bs-dismiss="alert" class="btn btn-danger">Delete</button>
+            </div>       
             <div class="card-group">
                   <div class="card m-3 border border-primary">
                         <div class="card-header">
